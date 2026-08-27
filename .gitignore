@@ -1,0 +1,26 @@
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/
+.virtual_documents/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+
+# Prostředí a tajemství
+.env
+.env.*
+*.pem
+*.key
+
+# Modely a artefakty
+*.joblib
+*.pkl
+*.h5
+*.onnx
+
+# OS
+.DS_Store

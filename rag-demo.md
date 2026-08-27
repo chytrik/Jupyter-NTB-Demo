@@ -9,7 +9,8 @@ všechna fakta jsou vymyšlená, takže model je nemůže znát z tréninku.
 ## Prerekvizity
 
 - **Qwen3-8B** nasazený na clusteru přes KServe (LLMInferenceService)
-- Endpoint: `https://qwen3-8b-kserve-workload-svc.rhoai-playground.svc.cluster.local:8000/v1`
+- Endpoint modelu v proměnné prostředí `MODEL_URL`, např.:
+  `export MODEL_URL="https://<kserve-service>.<namespace>.svc.cluster.local:8000/v1"`
 - Python balíčky: `openai`, `scikit-learn`, `httpx` (notebook je nainstaluje)
 
 ## Syntetická data (`data/`)

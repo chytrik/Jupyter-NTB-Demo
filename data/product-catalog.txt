@@ -1,0 +1,13 @@
+Nexus Technologies — Product Catalog 2026
+
+NEXUS SHIELD PRO
+Enterprise endpoint protection platform. Supports Windows, macOS, and Linux. Uses behavioral AI engine "Sentinel v3" for zero-day threat detection. License: per-endpoint, minimum 500 seats. Annual subscription starts at $42 per endpoint. Includes 24/7 SOC monitoring and quarterly threat briefings. Deployment options: SaaS, on-premise, or hybrid. Current version: 8.4.1, released March 2026.
+
+NEXUS VAULT
+Hardware security module (HSM) appliance for key management. FIPS 140-3 Level 3 certified. Supports RSA-4096, ECDSA P-384, and post-quantum algorithms (ML-KEM-1024, ML-DSA-87). Maximum throughput: 15,000 signing operations per second. Form factor: 1U rackmount. Price: $28,500 per unit, volume discounts available for orders above 10 units. Requires NexusOS 3.x firmware.
+
+NEXUS CLOUDWATCH
+Cloud security posture management (CSPM) tool. Monitors AWS, Azure, GCP, and OpenShift environments. Checks against CIS Benchmarks, NIST 800-53, and PCI DSS v4.0. Generates compliance reports in PDF and machine-readable OSCAL format. Pricing: based on number of monitored cloud accounts, starting at $850/month for up to 5 accounts. API available for CI/CD integration.
+
+NEXUS IDENTITY FABRIC
+Unified identity governance platform. Integrates with Active Directory, Okta, Ping Identity, and LDAP directories. Features: automated access reviews, segregation of duties enforcement, privileged access management, and just-in-time provisioning. Supports SCIM 2.0 and SAML 2.0. Enterprise license: $15 per managed identity per month.

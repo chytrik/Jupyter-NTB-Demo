@@ -1,0 +1,21 @@
+Nexus Technologies — Information Security Policy
+Version 4.2 | Effective: January 2026
+
+1. Password Requirements
+All employees must use passwords with a minimum length of 16 characters, including at least two uppercase letters, two digits, and two special characters. Passwords expire every 90 days. The last 12 passwords cannot be reused. Multi-factor authentication (MFA) is mandatory for all systems classified as Tier 1 or Tier 2.
+
+2. Data Classification
+Nexus Technologies uses four data classification levels:
+- PUBLIC: Marketing materials, published research, job postings.
+- INTERNAL: Internal memos, meeting notes, org charts.
+- CONFIDENTIAL: Customer data, financial reports, source code, API keys.
+- RESTRICTED: Cryptographic keys, penetration test results, board minutes, M&A documents.
+
+3. Incident Response
+Security incidents must be reported to the Security Operations Center (SOC) within 30 minutes of detection. The SOC hotline is ext. 4477 or soc@nexus-tech.internal. All Tier 1 incidents trigger automatic notification to the CISO and Legal department. Post-incident reviews must be completed within 5 business days.
+
+4. Remote Access
+VPN access requires a hardware token (YubiKey 5 series) plus biometric verification. Split tunneling is prohibited. All remote sessions are recorded and retained for 180 days. Contractors are limited to the Contractor VPN profile which restricts access to project-specific subnets only.
+
+5. Acceptable Use
+Company devices must not be used for cryptocurrency mining, personal cloud storage synchronization, or running unauthorized virtual machines. The IT department conducts quarterly audits of installed software. Violations result in a formal warning on first offense and device confiscation on second offense.

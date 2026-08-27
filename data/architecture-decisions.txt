@@ -1,0 +1,13 @@
+Nexus Technologies — Architecture Decision Records
+
+ADR-2024-017: Adoption of Event-Driven Architecture for Order Processing
+Status: Accepted | Date: 2024-11-15 | Author: Dr. Elena Varga, Chief Architect
+Decision: Replace the synchronous REST-based order processing pipeline with an event-driven architecture using Apache Kafka. All order state transitions will be published as CloudEvents to the "orders.lifecycle" topic. Downstream consumers (billing, fulfillment, analytics) subscribe independently. Rationale: The current synchronous pipeline creates cascading failures when any downstream service is unavailable. During the Black Friday 2024 incident, a 3-minute billing service outage caused 12,000 dropped orders. The event-driven approach decouples producers from consumers and provides at-least-once delivery guarantees with a 72-hour retention window.
+
+ADR-2025-003: Migration from PostgreSQL to CockroachDB for Multi-Region Deployments
+Status: Accepted | Date: 2025-02-20 | Author: Marcus Chen, Platform Engineering Lead
+Decision: Migrate the customer database from PostgreSQL 16 to CockroachDB 24.1 to support multi-region active-active deployments across Frankfurt, Singapore, and Virginia. CockroachDB provides serializable isolation with automatic geo-partitioning. The migration will use a dual-write strategy over 8 weeks with automated consistency checks. Estimated cost increase: 40% over PostgreSQL RDS, offset by eliminating the need for a separate read-replica fleet and custom replication logic.
+
+ADR-2025-011: Internal LLM Deployment for Code Review Assistance
+Status: Proposed | Date: 2025-08-10 | Author: Sofia Martinez, AI Platform Team
+Decision: Deploy a self-hosted LLM (Granite Code 34B) on the internal OpenShift AI cluster for automated code review suggestions. The model will be fine-tuned on 18 months of internal merge request review comments. Integration via a GitLab webhook that triggers review on every MR targeting the main branch. Estimated infrastructure cost: 2x NVIDIA A100 GPUs, approximately $4,200/month. Privacy benefit: no code leaves the corporate network.
